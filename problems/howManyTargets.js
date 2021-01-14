@@ -8,6 +8,15 @@
  *
  */
 
-function howManyTargets() {}
+const howManyTargets = (arr, target) => {
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i];
+        if (element === target) {
+            count++
+        }
+    }
+    return count
+}
 
 module.exports = howManyTargets;

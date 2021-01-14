@@ -8,6 +8,13 @@
  */
 
 
-function sumOfValuesOfObject(){}
+const sumOfValuesOfObject = (obj) => {
+    let sum = 0
+    let arr = Object.values(obj)
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i] 
+    }   
+    return sum 
+}
 
 module.exports = sumOfValuesOfObject;

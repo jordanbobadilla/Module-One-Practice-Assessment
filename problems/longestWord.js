@@ -8,6 +8,16 @@
  * returns "hello"
  */
 
-function longestWord() {}
+const longestWord = words => {
+    let str = ""
+    for (let i = 0; i < words.length; i++) {
+        const element = words[i];
+        if (element.length > str.length) {
+            str = element
+        } 
+    }
+    return str
+}
+
 
 module.exports = longestWord;
